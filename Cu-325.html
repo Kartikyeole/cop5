@@ -9,46 +9,49 @@
 	<style>
 		/* Style for the sliding section */
 		.sliding-section {
-		  overflow: hidden;
-		  height: 500px; /* Adjust this value to your desired height */
+			overflow: hidden;
+			height: 500px;
+			/* Adjust this value to your desired height */
 		}
-	
+
 		/* Style for the content inside the sliding section */
 		.sliding-content {
-		  width: 300%; /* Three slides, so the width is 300% of the container */
-		  height: 100%;
-		  display: flex;
+			width: 300%;
+			/* Three slides, so the width is 300% of the container */
+			height: 100%;
+			display: flex;
 		}
-	
+
 		/* Style for each slide */
 		.slide {
-		  flex: 0 0 33.33%; /* Each slide occupies 33.33% of the container's width */
-		  padding: 10px;
+			flex: 0 0 33.33%;
+			/* Each slide occupies 33.33% of the container's width */
+			padding: 10px;
 		}
-	
+
 		/* Style for the images */
 		.slide img {
-		  width: 20%;
-		  height: auto;
+			width: 20%;
+			height: auto;
 		}
-	  </style>
+	</style>
 
 	<script>
 		function toggleDropdown(id) {
-    var dropdownContent = document.getElementById(id);
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-    } else {
-        dropdownContent.style.display = "block";
-    }
-}
+			var dropdownContent = document.getElementById(id);
+			if (dropdownContent.style.display === "block") {
+				dropdownContent.style.display = "none";
+			} else {
+				dropdownContent.style.display = "block";
+			}
+		}
 
-function selectOption(option) {
-    var dropdownBtn = document.querySelector(".dropdown-btn");
-    dropdownBtn.textContent = option;
-    var dropdownContent = document.getElementById("dropdownList");
-    dropdownContent.style.display = "none";
-}
+		function selectOption(option) {
+			var dropdownBtn = document.querySelector(".dropdown-btn");
+			dropdownBtn.textContent = option;
+			var dropdownContent = document.getElementById("dropdownList");
+			dropdownContent.style.display = "none";
+		}
 	</script>
 </head>
 
@@ -66,21 +69,23 @@ function selectOption(option) {
 						<li><a href="about.html">About Us</a></li>
 						<li>
 							<div class="dropdown" id="product">
-								<button class="dropdown-btn" >Product</button>
+								<button class="dropdown-btn">Product</button>
 								<ul class="dropdown-content" id="ProList">
 									<li><a href="Tung.html">Tungsten Heavy Alloys</a></li>
 									<div class="row">
-										<div >
+										<div>
 											<li>
-											<a id="alloy">Alloy Powders</a>
-											<button id="but1"><img src="images/down-arrow.png" style="background: black;"></button>
-										</li>
+												<a id="alloy">Alloy Powders</a>
+												<button id="but1"><img src="images/down-arrow.png"
+														style="background: black;"></button>
+											</li>
 										</div>
 									</div>
-									
+
 									<div class="dropdown-sub" id="alloy-list">
 										<li><a>Copper Powder</a>
-											<button id="but2"><img src="images/down-arrow.png" style="background: black;"></button>
+											<button id="but2"><img src="images/down-arrow.png"
+													style="background: black;"></button>
 
 										</li>
 										<div class="dropdown-sub" id="cop">
@@ -89,7 +94,8 @@ function selectOption(option) {
 											<li><a href="LowAd.html">Low Ad Cu-200</a></li>
 										</div>
 										<li><a>Bronze Powder</a>
-										<button id="but3"><img src="images/down-arrow.png" style="background: black;"></button>
+											<button id="but3"><img src="images/down-arrow.png"
+													style="background: black;"></button>
 
 										</li>
 										<div class="dropdown-sub" id="bronze">
@@ -98,7 +104,8 @@ function selectOption(option) {
 											<li><a href="Bronze90.html">Bronze 90/10-325</a></li>
 										</div>
 										<li><a>Brass Powder</a>
-											<button id="but4"><img src="images/down-arrow.png" style="background: black;"></button>
+											<button id="but4"><img src="images/down-arrow.png"
+													style="background: black;"></button>
 
 										</li>
 										<div class="dropdown-sub" id="brass">
@@ -106,14 +113,16 @@ function selectOption(option) {
 											<li><a href="Brass60.html">Brass 60/40-325</a></li>
 										</div>
 										<li><a>Tin Powders</a>
-											<button id="but5"><img src="images/down-arrow.png" style="background: black;"></button>
+											<button id="but5"><img src="images/down-arrow.png"
+													style="background: black;"></button>
 
 										</li>
 										<div class="dropdown-sub" id="tin">
 											<li><a href="Sn-325.html">Sn-325</a></li>
 										</div>
 										<li><a>Nickel and Alloy Powders</a>
-											<button id="but6"><img src="images/down-arrow.png" style="background: black;"></button>
+											<button id="but6"><img src="images/down-arrow.png"
+													style="background: black;"></button>
 
 										</li>
 										<div class="dropdown-sub" id="nic">
@@ -122,8 +131,9 @@ function selectOption(option) {
 											<li><a href="Nibased.html">Ni based Boron alloy</a></li>
 										</div>
 										<li><a>Diamond Tool Matrix Powders</a>
-											<button id="but7"><img src="images/down-arrow.png" style="background: black;"></button>
-								
+											<button id="but7"><img src="images/down-arrow.png"
+													style="background: black;"></button>
+
 										</li>
 										<div class="dropdown-sub" id="dia">
 											<li><a href="Fe-Cu70.html">Fe-Cu 70/30</a></li>
@@ -136,7 +146,8 @@ function selectOption(option) {
 											<li><a href="CopperP.html">Copper Phosphorous</a></li>
 										</div>
 										<li><a>Tool Steel and Stainless Steel Powders</a>
-											<button id="but8"><img src="images/down-arrow.png" style="background: black;"></button>
+											<button id="but8"><img src="images/down-arrow.png"
+													style="background: black;"></button>
 
 										</li>
 										<div class="dropdown-sub" id="tool">
@@ -147,7 +158,8 @@ function selectOption(option) {
 											<li><a href="T-15.html">T-15</a></li>
 										</div>
 										<li><a>Zinc Powders</a>
-											<button id="but9"><img src="images/down-arrow.png" style="background: black;"></button>
+											<button id="but9"><img src="images/down-arrow.png"
+													style="background: black;"></button>
 
 										</li>
 										<div class="dropdown-sub" id="zinc">
@@ -155,20 +167,22 @@ function selectOption(option) {
 										</div>
 									</div>
 								</ul>
-						    </div>
+								    
+							</div>
 						</li>
-						
+
 						<li><a href="r&d.html">R&D</a></li>
 						<li>
 							<div class="dropdown" id="Others">
-								<button class="dropdown-btn" >Others</button>
+								<button class="dropdown-btn">Others</button>
 								<ul class="dropdown-content" id="othList">
-								<li><a href="facilities.html">Facilities</a></li>
-								<li><a href="application.html">Applications</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
-								<li><a href="sitemap.html">Sitemap</a></li>
+									<li><a href="facilities.html">Facilities</a></li>
+									<li><a href="application.html">Applications</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="sitemap.html">Sitemap</a></li>
 								</ul>
-						    </div>
+								    
+							</div>
 						</li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
@@ -190,84 +204,128 @@ function selectOption(option) {
 				</div>
 				<div class="sliding-section">
 					<div class="sliding-content">
-					  <!-- Slide 1 -->
-					  <div class="slide">
-						<img src="images\innotung.png" alt="Image 1" style="width: 100%;">
-						<p>Content Slide 1</p>
-					  </div>
-				
-					  <!-- Slide 2 -->
-					  <div class="slide">
-						<img src="images\balance-weight.jpg" alt="Image 2" style="width: 100%;">
-						<p>Content Slide 2</p>
-					  </div>
-				
-					  <!-- Slide 3 -->
-					  <div class="slide">
-						<img src="images\camera-body1.jpg" alt="Image 3" style="width: 100%;">
-						<p>Content Slide 3</p>
-					  </div>
+						<!-- Slide 1 -->
+						<div class="slide">
+							<img src="images\innotung.png" alt="Image 1" style="width: 100%;">
+							<p>Content Slide 1</p>
+						</div>
 
-					  <div class="slide">
-						<img src="images\camera-body2.jpg" alt="Image 3" style="width: 100%;">
-						<p>Content Slide 3</p>
-					  </div>
-					  <!-- You can add more slides as needed -->
+						<!-- Slide 2 -->
+						<div class="slide">
+							<img src="images\balance-weight.jpg" alt="Image 2" style="width: 100%;">
+							<p>Content Slide 2</p>
+						</div>
+
+						<!-- Slide 3 -->
+						<div class="slide">
+							<img src="images\camera-body1.jpg" alt="Image 3" style="width: 100%;">
+							<p>Content Slide 3</p>
+						</div>
+
+						<div class="slide">
+							<img src="images\camera-body2.jpg" alt="Image 3" style="width: 100%;">
+							<p>Content Slide 3</p>
+						</div>
+						<!-- You can add more slides as needed -->
 					</div>
-				  </div>
+				</div>
 			</div>
-			<div class="content" >
-				<table height="400" border="2" align="center" cellpadding="5" cellspacing="0" bgcolor="#FFCC66" class="Text">
-					<tbody><tr>
-					  <td width="400"><p align="center">Specification No.</p></td>
-					  <td width="400"><p align="center">IP 11001</p></td>
-					</tr>
-					<tr>
-					  <td width="400"><p align="center">Purity</p></td>
-					  <td width="400"><p align="center">Cu: 99.5 % min.</p></td>
-					</tr>
-					<tr>
-					  <td width="400"><p align="center">Size</p></td>
-					  <td width="400"><p align="center">- 325 # (45 microns)</p></td>
-					</tr>
-					<tr>
-					  <td width="400" rowspan="2"><p align="center">Sieve analysis</p></td>
-					  <td width="400"><p align="center">&gt;45µm: 5% max.</p></td>
-					</tr>
-					<tr>
-					  <td width="400"><p align="center">&gt;25µm: 40-60 %</p></td>
-					</tr>
-					<tr>
-					  <td width="400"><p align="center">Shape</p></td>
-					  <td width="400"><p align="center">Irregular</p></td>
-					</tr>
-					<tr>
-					  <td width="400"><p align="center">Apparent density</p></td>
-					  <td width="400"><p align="center">3.0 - 4.0 g/cc</p></td>
-					</tr>
-					<tr>
-					  <td width="400"><p align="center">Oxygen Content<br>
-						(Hydrogen Loss) </p></td>
-					  <td width="400"><p align="center">0.35 % max.</p></td>
-					</tr>
-				  </tbody></table>
-			</div>
-			<p class="content-desc">
-				<tr>
-					<th>Specification No.</th>
-					<th>IP 11001</th>
-				</tr>
+			<div class="content" style="padding: 20">
 				<div class="skill-img">
 					<a href="css\iso-certificate-padmasree.pdf" target="_blank">
 						<img src="css/WhatsApp Image 2023-07-29 at 20.05.36.jpg" width=75px height=500px></a>
 				</div>
+				<table height="400" border="2" align="center" cellpadding="5" cellspacing="0" bgcolor="#FFCC66"
+					class="Text" >
+					<tbody >
+						<tr>
+							<td width="400">
+								<p align="center">Specification No.</p>
+							</td>
+							<td width="400">
+								<p align="center">IP 11001</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="400">
+								<p align="center">Purity</p>
+							</td>
+							<td width="400">
+								<p align="center">Cu: 99.5 % min.</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="400">
+								<p align="center">Size</p>
+							</td>
+							<td width="400">
+								<p align="center">- 325 # (45 microns)</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="400" rowspan="2">
+								<p align="center">Sieve analysis</p>
+							</td>
+							<td width="400">
+								<p align="center">&gt;45µm: 5% max.</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="400">
+								<p align="center">&gt;25µm: 40-60 %</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="400">
+								<p align="center">Shape</p>
+							</td>
+							<td width="400">
+								<p align="center">Irregular</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="400">
+								<p align="center">Apparent density</p>
+							</td>
+							<td width="400">
+								<p align="center">3.0 - 4.0 g/cc</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="400">
+								<p align="center">Oxygen Content<br>
+									(Hydrogen Loss) </p>
+							</td>
+							<td width="400">
+								<p align="center">0.35 % max.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			
+			<p class="content">
+			<h2>TYPICAL APPLICATIONS</h2>
+			<li>Infiltrations</li>
+			<li>Diamond tools</li>
+			<li>P/M Parts </li>	
+			<li>Brazing</li>
+			<li>Resin Bonded Friction Materials</li>
+			<li>Self Lubricating Bearings </li>
+			<li>Alternator Brushes</li>
+			<li>Catalyst Applications </li>
+			<li>Friction Components</li>
+			<li>Electrical parts</li>
+			<li>Chemical formulations</li>
+			
 			</p>
 
-			</div>
 		</div>
 	</div>
+	</div>
 
-	
+
 
 	<div class="footer">
 		<div class="Terms">
@@ -278,13 +336,13 @@ function selectOption(option) {
 		</div>
 
 		<div class="icons">
-		<p>
-			<a href="#"><img src="images/social1.png"></a>
-			<a href="#"><img src="images/social2.png"></a>
-			<a href="#"><img src="images/social3.png"></a>
-			<a href="#"><img src="images/social4.png"></a>
-		</p>
-	</div>
+			<p>
+				<a href="#"><img src="images/social1.png"></a>
+				<a href="#"><img src="images/social2.png"></a>
+				<a href="#"><img src="images/social3.png"></a>
+				<a href="#"><img src="images/social4.png"></a>
+			</p>
+		</div>
 		<div class="copy">
 			<p>&copy; Copyright © 2019 Innomet Powders, All Rights Reserved.</p>
 		</div>
@@ -334,30 +392,30 @@ function selectOption(option) {
 		});
 		// jQuery code to create the sliding effect
 		$(document).ready(function () {
-		  let currentIndex = 0;
-		  const slideWidth = $(".sliding-content").width() / 3; // Divide by the number of slides
-		  const slideCount = $(".sliding-content div").length;
-	
-		  function slideToIndex(index) {
-			$(".sliding-content").animate({
-			  marginLeft: -index * slideWidth,
-			}, 500);
-		  }
-	
-		  function nextSlide() {
-			currentIndex = (currentIndex + 1) % slideCount;
-			slideToIndex(currentIndex);
-		  }
-	
-		  function prevSlide() {
-			currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-			slideToIndex(currentIndex);
-		  }
-	
-		  // Automatically move to the next slide every 3 seconds (adjust the time as needed)
-		  setInterval(nextSlide, 2000);
+			let currentIndex = 0;
+			const slideWidth = $(".sliding-content").width() / 3; // Divide by the number of slides
+			const slideCount = $(".sliding-content div").length;
+
+			function slideToIndex(index) {
+				$(".sliding-content").animate({
+					marginLeft: -index * slideWidth,
+				}, 500);
+			}
+
+			function nextSlide() {
+				currentIndex = (currentIndex + 1) % slideCount;
+				slideToIndex(currentIndex);
+			}
+
+			function prevSlide() {
+				currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+				slideToIndex(currentIndex);
+			}
+
+			// Automatically move to the next slide every 3 seconds (adjust the time as needed)
+			setInterval(nextSlide, 2000);
 		});
-	  </script>
+	</script>
 
 </body>
 
